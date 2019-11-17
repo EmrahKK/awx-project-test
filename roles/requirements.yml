@@ -1,0 +1,3 @@
+- src: https://github.com/zaxos/tomcat-ansible-role
+  version: master 
+  name: tomcat-role 
