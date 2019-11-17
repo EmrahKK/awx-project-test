@@ -8,13 +8,16 @@
     
     tomcat_permissions_production: True
     ansible_memtotal_mb: 4096
-    
+
     tomcat_users:
       - username: "tomcat"
         password: "t3mpp@ssw0rd"
         roles: "tomcat,admin,manager,manager-gui"
       - username: "exampleuser"
         password: "us3rp@ssw0rd"
-        roles: "tomcat"        
+        roles: "tomcat"   
+
+    tomcat_state: absent     
+    
   roles:
     - role: zaxos.tomcat-ansible-role
