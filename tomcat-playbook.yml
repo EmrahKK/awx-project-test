@@ -16,4 +16,4 @@
         password: "us3rp@ssw0rd"
         roles: "tomcat"        
   roles:
-    - role: tomcat-role
+    - role: zaxos.tomcat-ansible-role
