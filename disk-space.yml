@@ -4,7 +4,15 @@
   gather_facts: False
   
   tasks:
+    - name: example copying file with owner and permissions
+      copy:
+        src: dkchck.sh
+        dest: /root/dkchck.sh
+        owner: root
+        group: root
+        mode: 0700
     - name: Execute the command in remote shell; stdout goes to the specified file on the remote.
       shell: dkchck.sh >> dkchcklog.txt
+
 
 
