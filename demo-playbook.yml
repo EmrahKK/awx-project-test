@@ -2,7 +2,7 @@
 - name: Demo
   hosts: all
   gather_facts: False
- 
+  
   tasks:
     - debug:
         msg: Just echo something

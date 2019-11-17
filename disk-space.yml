@@ -1,0 +1,10 @@
+---
+- name: Disk Space Check
+  hosts: all
+  gather_facts: False
+  
+  tasks:
+    - name: Execute the command in remote shell; stdout goes to the specified file on the remote.
+      shell: dkchck.sh >> dkchcklog.txt
+
+
