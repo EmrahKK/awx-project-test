@@ -16,8 +16,6 @@
       - username: "exampleuser"
         password: "us3rp@ssw0rd"
         roles: "tomcat"   
-
-    tomcat_state: absent     
-    
+         
   roles:
     - role: zaxos.tomcat-ansible-role
